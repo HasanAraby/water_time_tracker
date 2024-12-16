@@ -1,16 +1,45 @@
-# water_time_tracker
+Water Time Tracker
+Water Time Tracker is an intuitive and efficient app designed to help you monitor your daily water intake. This app allows you to track the amount of water you've consumed today and in the past by logging each entry into a local database using the sqflite package.
 
-A new Flutter project.
+Features
+Track Water Intake: Add the amount of water you drink, record the time and date, and store it in the local database.
 
-## Getting Started
+Visual Animation: The app includes an engaging animation that displays the percentage of your water intake against the daily goal you set for yourself.
 
-This project is a starting point for a Flutter application.
+Modify Records: Easily add, delete, or update your water intake records and adjust your daily water intake goal at any time.
 
-A few resources to get you started if this is your first Flutter project:
+Detailed Records: Each record in the database includes the amount of water (in mL), time (hours:minutes), and date.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Technical Features
+State Management: Utilizes the BLoC pattern for efficient state management.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Animation: Smooth and responsive animations to enhance the user experience.
+
+Dependency Injection: Implemented using the get_it package for better modularity and testability.
+
+Clean Code: Adheres to clean code principles and best practices.
+
+Architecture Pattern (MVVM): Organized using the Model-View-ViewModel pattern for scalable and maintainable code.
+
+Local Database: Manages data locally using the sqflite package.
+
+Packages Used
+cupertino_icons: ^1.0.8
+
+equatable: ^2.0.7
+
+flutter
+
+flutter_bloc: ^8.1.6
+
+get_it
+
+intl: ^0.20.1
+
+path
+
+shared_preferences: ^2.3.3
+
+sqflite: ^2.4.1
+
+wave_loading_indicator
