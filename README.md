@@ -43,3 +43,6 @@ shared_preferences: ^2.3.3
 sqflite: ^2.4.1
 
 wave_loading_indicator
+
+apk link:
+https://drive.google.com/file/d/1dG_mTTen7vF2i1y0v-eaOyQ5FsoMksMF/view?usp=sharing

@@ -26,16 +26,10 @@ class DbHelper {
       onCreate: (Database db, int v) async {
         await db.execute('''CREATE TABLE records(
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-     amount INT,
-     time VARCHAR,
+    date VARCHAR,
+    amount INT,
+    time VARCHAR
     )''');
-      },
-      onUpgrade: (db, oldVersion, newVersion) async {
-        var batch = db.batch();
-        if (newVersion == 3) {
-          batch.execute('ALTER TABLE records ADD COLUMN date VARCHAR');
-        }
-        await batch.commit();
       },
     );
     return _db!;

@@ -27,25 +27,26 @@ class Records extends StatelessWidget {
           // print('in ui');
           // print(state.records![0].time);
           // print(state.records! == null);
-          return state.stateStatus == StateStatus.LoadingState
-              ? Center(
-                  child: Text(
-                    'Loading....',
-                    style: AppFontStyles.big(context),
-                  ),
-                )
-              : state.records == null || state.records!.isEmpty
-                  ? Center(
-                      child: Text(
-                        'You have not add any records yet!',
-                        style: AppFontStyles.big19(context),
-                      ),
-                    )
-                  // : const Text('problem is here');
-                  : RecordsListView(
-                      records: state.records!,
-                      water: 'water',
-                    );
+          if (state.stateStatus == StateStatus.LoadingState) {
+            return Center(
+              child: Text(
+                'Loading....',
+                style: AppFontStyles.big(context),
+              ),
+            );
+          } else if (state.records == null || state.records!.isEmpty) {
+            return Center(
+              child: Text(
+                'You have not add any records yet!',
+                style: AppFontStyles.big19(context),
+              ),
+            );
+          } else {
+            return RecordsListView(
+              records: state.records!,
+              water: 'water',
+            );
+          }
         },
       ),
     );

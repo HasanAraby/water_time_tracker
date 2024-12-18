@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:water_time_tracker/core/dependency_injection/dependency_injection.dart';
 import 'package:water_time_tracker/view/screens/splash_screen.dart';
@@ -8,6 +9,7 @@ import 'package:water_time_tracker/view_model/blocs/water/water_bloc.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await initDependencyInjection();
+  await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
 
   runApp(const MyApp());
 }
