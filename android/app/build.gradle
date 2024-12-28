@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "com.example.water_time_tracker"
-    compileSdk = flutter.compileSdkVersion
+    compileSdk = 34
     ndkVersion = flutter.ndkVersion
 
     compileOptions {

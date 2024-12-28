@@ -1,6 +1,5 @@
 import 'package:get_it/get_it.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:water_time_tracker/core/constants/strings.dart';
 import 'package:water_time_tracker/core/database/local_database.dart';
 import 'package:water_time_tracker/core/functions/update_date_and_drunk_amount.dart';
 import 'package:water_time_tracker/view_model/blocs/navigation_and_database/screans_and_database_bloc.dart';
